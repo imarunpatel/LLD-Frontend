@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tabs {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tab-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    background-color: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    flex: 1;
+}
+
+.tab.active {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid transparent; /* Hide border */
+}
+
+.tab:hover {
+    background-color: #e0e0e0;
+}
+
+.tab-content {
+    padding: 15px;
+}
+
+.tab-panel {
+    display: none; 
+}
+
+.tab-panel.active {
+    display: block; /* Show active panel */
+}
+
+.image {
+    background-image: url('https://imagekit.io/blog/content/images/2020/06/CDN_server_user.png');
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    background-size: cover;
+    width: 300px;
+    min-height: 100px;
+    /* background-color: red; */
+}

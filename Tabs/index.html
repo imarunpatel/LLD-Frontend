@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+
+  <div class="tabs" style="background-color: pink;">
+    <ul role="tablist" class="tab-lists" style="background-color: skyblue;">
+        <li role="tab" aria-selected="true" aria-controls="tab1" id="tab1-btn" class="tab active">Tab 1</li>
+        <li role="tab" aria-selected="false" aria-controls="tab2" id="tab2-btn" class="tab">Tab 2</li>
+        <li role="tab" aria-selected="false" aria-controls="tab3" id="tab3-btn" class="tab">Tab 3</li>
+    </ul>
+    <div class="tab-content" style="background-color: green;">
+        <div role="tabpanel" aria-labelledby="tab1-btn" id="tab1" class="tab-panel active">
+            <p>Content for Tab 1</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="tab2-btn" id="tab2" class="tab-panel">
+            <p>Content for Tab 2</p>
+        </div>
+        <div role="tabpanel" aria-labelledby="tab3-btn" id="tab3" class="tab-panel">
+            <p>Content for Tab 3</p>
+        </div>
+    </div>
+  </div>
+
+  <!-- <div >
+      <img class="image" src="https://imagekit.io/blog/content/images/2020/06/CDN_server_user.png"  alt="">
+  </div> -->
+</body>
+</html> 
